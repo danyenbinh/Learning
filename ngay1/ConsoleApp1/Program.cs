@@ -88,7 +88,7 @@ namespace B2
             {
                 Console.WriteLine(abc);
             }*/
-            double[,] a = new double[2, 3] { { 2, 3, 4 }, { 5, 6, 7 } };
+            /*double[,] a = new double[2, 3] { { 2, 3, 4 }, { 5, 6, 7 } };
             int hang = 2;
             int cot = 3;
             for (int i = 0; i < hang; i++)
@@ -99,7 +99,45 @@ namespace B2
                     Console.Write(" ");
                 }
                 Console.WriteLine();
-            }
+            }*/
+
+            string hoten="";
+            int tuoi=0;
+            int MSV=0;
+            int chon;
+            do
+            {
+                Console.WriteLine("-----------Menu-----------");
+                Console.WriteLine("1 - Nhap ho va ten");
+                Console.WriteLine("2 - Nhap so tuoi");
+                Console.WriteLine("3 - Nhap ma sinh vien");
+                Console.WriteLine("4 - Xuat");
+                Console.WriteLine("--------------------------");
+                chon = int.Parse(Console.ReadLine());
+                switch(chon){
+                    case 1:
+                        Console.WriteLine("Nhap ho va ten:");
+                        hoten = Console.ReadLine();
+                        break;
+                    case 2:
+                        Console.WriteLine("Nhap tuoi: ");
+                        tuoi = int.Parse(Console.ReadLine());
+                        break;
+                    case 3:
+                        Console.WriteLine("Nhap ma sinh vien");
+                        MSV = int.Parse(Console.ReadLine());
+                        break;
+                    default:
+                        Console.WriteLine("Chon so khac");
+                        break;
+                }
+            } while (chon != 4);
+            Console.WriteLine($"Ho va ten:{ hoten}");
+            Console.WriteLine($"Tuoi: {tuoi}");
+            Console.WriteLine($"MSV: {MSV}");
+
+
+
         }
 
     }
