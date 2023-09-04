@@ -1,0 +1,7 @@
+F:\code lập trình\bientrongc\bientrongc\bin\Debug\bientrongc.exe.config
+F:\code lập trình\bientrongc\bientrongc\bin\Debug\bientrongc.exe
+F:\code lập trình\bientrongc\bientrongc\bin\Debug\bientrongc.pdb
+F:\code lập trình\bientrongc\bientrongc\obj\Debug\bientrongc.csproj.AssemblyReference.cache
+F:\code lập trình\bientrongc\bientrongc\obj\Debug\bientrongc.csproj.CoreCompileInputs.cache
+F:\code lập trình\bientrongc\bientrongc\obj\Debug\bientrongc.exe
+F:\code lập trình\bientrongc\bientrongc\obj\Debug\bientrongc.pdb
