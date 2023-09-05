@@ -229,6 +229,7 @@ namespace LearnCSharpHowKTeam2023
             Console.WriteLine(x);
             Console.ReadKey();*/
             #endregion
+
             #region Bai 8 Ep kieu
 
             // Cac kieu ep kieu trong C#
@@ -244,9 +245,9 @@ namespace LearnCSharpHowKTeam2023
             double doubleValue = floatValue; *//* Tương tự vì kiểu double có miền giá trị lớn hơn kiểu float nên có thể chuyển từ float sang double.*/
 
             // Chuyển đổi kiểu tường minh
-            int i = 300; // 300 có mã nhị phân là 100101100
+            /*int i = 300; // 300 có mã nhị phân là 100101100
             byte b = (byte)i;
-            /* do kiểu byte có giới hạn đến giá trị 255 thôi nên không thể chứa số 300 được mà kiểu byte có kích thước là 1 bytes tương đương 8 bit. Như vậy ta cần cắt mã nhị phân của số 300 về còn 8 bit là được. Mã nhị phân 300 là 100101100 cắt từ trái qua 1 bit ta được 00101100 (đủ 8 bit) tương đương với số 44. Cuối cùng biến b sẽ mang giá trị là 44.*/
+            *//* do kiểu byte có giới hạn đến giá trị 255 thôi nên không thể chứa số 300 được mà kiểu byte có kích thước là 1 bytes tương đương 8 bit. Như vậy ta cần cắt mã nhị phân của số 300 về còn 8 bit là được. Mã nhị phân 300 là 100101100 cắt từ trái qua 1 bit ta được 00101100 (đủ 8 bit) tương đương với số 44. Cuối cùng biến b sẽ mang giá trị là 44.*//*
 
             Console.WriteLine(" i = " + i);
             Console.WriteLine(" b = " + b);
@@ -255,12 +256,185 @@ namespace LearnCSharpHowKTeam2023
             double t = 1.0 * 2 / 3; // Thực hiện nhân 1.0 với 2 mục đích để biến số 2 (số nguyên) thành 2.0 (số thực)
 
             Console.WriteLine(" d = {0} \n k = {1} \n t = {2}", d, k, t);
-            Console.ReadKey();
-            Console.ReadKey();
+            Console.ReadKey();*/
+
+            /*int i = 300; // 300 có mã nhị phân là 100101100
+            byte b = (byte)i;
+            *//* do kiểu byte có giới hạn đến giá trị 255 thôi nên không thể chứa số 300 được mà kiểu byte có kích thước là 1 bytes tương đương 8 bit. Như vậy ta cần cắt mã nhị phân của số 300 về còn 8 bit là được. Mã nhị phân 300 là 100101100 cắt từ trái qua 1 bit ta được 00101100 (đủ 8 bit) tương đương với số 44. Cuối cùng biến b sẽ mang giá trị là 44.*//*
+
+            Console.WriteLine(" i = " + i);
+            Console.WriteLine(" b = " + b);
+
+            int a = 5;
+            int c = 2;
+            float tt = a * 1.0f / c; //  => 2,5
+            double d = 2 / 3; // kết quả ra 0 vì 2 và 3 đều là số nguyên nên thực hiện 2 chia lấy phần nguyên với 3 được 0
+            double k = (double)2 / 3; // Ép kiểu số 2 từ kiểu nguyên sang kiểu số thực. Như vậy kết quả phép chia sẽ ra số thực
+            double t = 1.0 * 2 / 3; // Thực hiện nhân 1.0 với 2 mục đích để biến số 2 (số nguyên) thành 2.0 (số thực)
+
+            Console.WriteLine(" d = {0} \n k = {1} \n t = {2}", d, k, t);
+            Console.ReadKey();*/
+
+            // Sử dụng phương thức, lớp hỗ trợ sẵn
+
+            // Parse()
+            /*string stringValue = "10";
+            int intValue = int.Parse(stringValue); // Chuyển chuỗi stringValue sang kiểu int và lưu giá trị vào biến intValue - Kết quả intValue = 10
+            double HowKteam = double.Parse("10.9"); // Chuyển chuỗi giá trị hằng "10.9" sang kiểu int và lưu giá trị vào biến HowKteam - Kết quả HowKteam = 10.9
+*/
+            // TryParse()
+            /*int Result; // Biến chứa giá trị kết quả khi ép kiểu thành công
+            bool isSuccess; // Biến kiểm tra việc ép kiểu có thành công hay không
+            string Data1 = "10", Data2 = "Kteam"; // Dữ liệu cần ép kiểu
+
+            isSuccess = int.TryParse(Data1, out Result); // Thử ép kiểu Data1 về int nếu thành công thì Result sẽ chứa giá trị kết quả ép kiểu và isSuccess sẽ mang giá trị true. Ngược lại Result sẽ mang giá trị 0 và isSuccess mang giá trị false
+            Console.Write(isSuccess == true ? " Success !" : " Failed !"); // Sử dụng toán tử 3 ngôi để in ra màn hình việc ép kiểu đã thành công hay thất bại.
+            Console.WriteLine(" Result = " + Result); // In giá trị Result ra màn hình
+
+            isSuccess = int.TryParse(Data2, out Result); // Tương tự như trên nhưng thao tác với Data2
+            Console.Write(isSuccess == true ? " Success !" : " Failed !"); // Tương tự như trên
+            Console.WriteLine(" Result = " + Result); // Tương tự như trên*/
+
+            // Lớp hỗ trợ sẵn (Convert)
+
+            /*int A, B; // Biến chứa giá trị 2 số vừa nhập vào (kiểu số)
+            int Tong, Hieu, Tich; // Biến chứa kết quả tổng, hiệu, tích
+            double Thuong; // Vì phép chia có thể cho ra số thập phân nên dùng biến kiểu double để chứa nó.
+            string strA, strB; // Biến chứa giá trị 2 số nhập vào từ bàn phím (kiểu chuỗi)
+
+            Console.WriteLine("         **************************************************");
+            Console.WriteLine("         *                                         			       *");
+            Console.WriteLine("         *   Chuong trinh tinh tong, hieu, tich, thuong  *");
+            Console.WriteLine("         *                                            		       *");
+            Console.WriteLine("         **************************************************");
+
+            Console.Write("\n Moi ban nhap so A: ");
+            strA = Console.ReadLine(); // Nhận giá trị nhập vào từ bàn phím cho số A
+            Console.Write(" Moi ban nhap so B: ");
+            strB = Console.ReadLine(); // Nhận giá trị nhập vào từ bàn phím cho số B
+
+            A = int.Parse(strA); // Ép kiểu giá trị nhập vào từ kiễu chuỗi sang kiểu số nguyên, sử dụng phương thức Parse()
+            B = int.Parse(strB); // Tương tự
+
+            Tong = A + B;
+            Hieu = A - B;
+            Tich = A * B;
+            Thuong = (double)A / B; // Ép kiểu số A về số thập phân để phép chia cho ra số thập phân
+
+            Console.WriteLine(" Tong = " + Tong);
+            Console.WriteLine(" Hieu = " + Hieu);
+            Console.WriteLine(" Tich = " + Tich);
+            Console.WriteLine(" Thuong = " + Thuong);*/
+
+            #endregion
+
+            #region Cấu trúc dẽ nhánh If Else
+            // Câu điều kiện dạng thiếu 
+            /*string T = "TuNguyen";
+            if (T == "TuNguyen")
+                // Biểu thức điều kiện sử dụng toán tử == đề so sánh xem giá trị biến K có bằng “Kteam” hay không. Nếu bằng trả thì trả về true ngược lại thì trả về false.
+                Console.WriteLine("Free Fire"); // In ra màn hình chữ “Free Education” nếu biểu thức trên đúng.*/
+
+            // Câu điều kiện dạng đủ
+            /*string T = "TuNguyen";
+
+            if (T == "TuNguyen1") // Nếu giá trị K bằng “TuNguyen” thì
+                Console.WriteLine("Free Fire"); // In ra màn hình “Free Fire”
+            else // Ngược lại thì
+                Console.WriteLine("Connecting to TuNguyen. . ."); // In ra màn hình “Connecting to TuNguyen. . .”
+*/
+            /*string T = "10-09";
+            if ( T == "TuNguyen")
+            {
+                Console.WriteLine("TuNguyen.vn");
+                Console.WriteLine("Free Fire");
+            }    
+            else if (T == "Tu")
+            {
+                Console.WriteLine("Share to be stupit");
+            }    
+            else
+            {
+                if (T == "10-09")
+                {
+                    Console.WriteLine("Public Website TuNguyen.vn");
+                }    
+                else
+                {
+                    Console.WriteLine(" Conecting to the Free Fire World");
+                }    
+                
+            }    */
 
 
 
+            /*string tuNguyen = "TuNguyen";
+            bool isTuNguyen = tuNguyen == "TuNguyen" ? true : false;
 
+            if (isTuNguyen)
+            {
+                Console.WriteLine("Welcome to my house");
+            }    
+            else
+            {
+                Console.WriteLine("Share to be bad");
+            }
+
+            Console.ReadLine();*/
+
+            /*string tuNguyen = "TuNguyen";
+            //bool isTuNguyen = tuNguyen == "TuNguyen" ? true : false;
+
+            if (tuNguyen == "TuNguyen" ? true : false)
+            {
+                Console.WriteLine("Welcome to my house");
+            }
+            else
+            {
+                Console.WriteLine("Share to be bad");
+            }
+
+            Console.ReadLine();*/
+
+            // Vi du
+            string strA, strB;
+            int A, B;
+            double Nghiem;
+
+            Console.WriteLine("         ***************************************************");
+            Console.WriteLine("         *                                        			        *");
+            Console.WriteLine("         *    Chuong trinh giai phuong trinh Ax + B = 0 *");
+            Console.WriteLine("         *                                                 		        *");
+            Console.WriteLine("         ***************************************************");
+
+            Console.Write(" Moi nhap so A: ");
+            strA = Console.ReadLine();
+            Console.Write(" Moi nhap so B: ");
+            strB = Console.ReadLine();
+
+            if (int.TryParse(strA, out A) == false || int.TryParse(strB, out B) == false) // kiểm tra người dùng có thực sự nhập số nguyên vào hay không. Nếu ép kiểu thành công sẽ trả về true, ngược lại trả về false
+            {
+                Console.WriteLine(" Du lieu nhap sai !");
+                return; // Lệnh này tạm hiểu là dừng và thoát chương trình mà không thực hiện những câu lệnh sau nó nữa. Sẽ được tìm hiểu chi tiết trong bài 16 Hàm
+            }
+            else
+            {
+                Console.WriteLine("\n Phuong trinh cua ban vua nhap la: {0}x + {1} = 0", A, B);
+
+                if (A == 0)
+                {
+                    Console.WriteLine("\n Phuong trinh co vo so nghiem !");
+                }
+                else if (B == 0)
+                {
+                    Console.WriteLine("\n Phuong trinh co nghiem x = 0");
+                }
+                else
+                {
+                    Nghiem = (double)-B / A; // Ép kiểu để cho ra kết quả chính xác
+                    Console.WriteLine("\n Phuong trinh co nghiem x = {0}", Nghiem);
+                }
+            }
 
 
 
@@ -284,6 +458,5 @@ namespace LearnCSharpHowKTeam2023
 
     namespace Sub_Namespace { }
 }*/
-
 
 
