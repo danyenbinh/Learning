@@ -10,7 +10,7 @@ namespace bientrongc
     {
         static void Main(string[] args)
         {
-            bai9();
+            baitap();
          
 
 
@@ -55,6 +55,15 @@ namespace bientrongc
                 Console.WriteLine("Free Education");
             else
                 Console.WriteLine(" connecting to . . .");
+            Console.ReadKey();
+        }
+        static void baitap()
+        {
+            string A = "2";
+            if (A == "3")
+                Console.WriteLine(" có 1 chu so la 2");
+            else
+                Console.WriteLine(" khong phai chu so ");
             Console.ReadKey();
         }
   
