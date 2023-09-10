@@ -328,7 +328,7 @@ namespace LearnCSharpHowKTeam2023
 
             #endregion
 
-            #region Cấu trúc dẽ nhánh If Else
+            #region Bai 9 Cấu trúc dẽ nhánh If Else
             // Câu điều kiện dạng thiếu 
             /*string T = "TuNguyen";
             if (T == "TuNguyen")
@@ -397,7 +397,7 @@ namespace LearnCSharpHowKTeam2023
             Console.ReadLine();*/
 
             // Vi du
-            string strA, strB;
+            /*string strA, strB;
             int A, B;
             double Nghiem;
 
@@ -434,16 +434,211 @@ namespace LearnCSharpHowKTeam2023
                     Nghiem = (double)-B / A; // Ép kiểu để cho ra kết quả chính xác
                     Console.WriteLine("\n Phuong trinh co nghiem x = {0}", Nghiem);
                 }
+            }*/
+
+            #endregion
+
+            #region Bai 10 Cấu trúc Switch case
+
+            // Switch dạng thiếu
+            /*int k = 10;
+
+            switch (k) // giá trị biểu thức là giá trị của biến k (kiểu số nguyên)
+            {
+                case 3: // các giá trị so sánh cũng là kiểu số nguyên
+                    Console.WriteLine("HowKteam"); // lệnh thực hiện nếu k = 3
+                    break; // lệnh thoát ra khỏi cấu trúc
+                case 9:
+                    Console.WriteLine("Kteam"); // tương tự
+                    break;
+                case 10:
+                    Console.WriteLine("Free Education"); // tương tự
+                    break;
+            }
+            Console.ReadKey();*/
+
+            // Switch dạng đủ
+            /*int k = 8;
+
+            switch (k)
+            {
+                case 3:
+                    Console.WriteLine("HowKteam");
+                    break;
+                case 9:
+                    Console.WriteLine("Kteam");
+                    break;
+                case 10:
+                    Console.WriteLine("Free Education");
+                    break;
+                default: // Nếu không thỏa các trường hợp trên sẽ thực hiện lệnh sau đây
+                    Console.WriteLine("Connecting to HowKteam. . .");
+                    break;
+            }
+            Console.ReadKey();*/
+
+            // Vi du
+            /*int Year; // Biến chứa giá trị năm cần tính.
+            string Can = "", Chi = ""; // Biến chứa kết quả.
+
+            Console.Write(" Moi ban nhap mot nam bat ky: ");
+            Year = Int32.Parse(Console.ReadLine()); // Nhập năm dương lịch và ép kiểu về kiểu số nguyên
+
+            switch (Year % 10) // Tìm Can như thuật toán đã trình bày.
+            {
+                case 0: // Mỗi case này tương ứng một kết quả cần tra cứu trong bảng tra cứu Can
+                    Can = "Canh"; // Giá trị tương ứng với mỗi case
+                    break;
+                case 1:
+                    Can = "Tan";
+                    break;
+                case 2:
+                    Can = "Nham";
+                    break;
+                case 3:
+                    Can = "Quy";
+                    break;
+                case 4:
+                    Can = "Giap";
+                    break;
+                case 5:
+                    Can = "At";
+                    break;
+                case 6:
+                    Can = "Binh";
+                    break;
+                case 7:
+                    Can = "Dinh";
+                    break;
+                case 8:
+                    Can = "Mau";
+                    break;
+                case 9:
+                    Can = "Ky";
+                    break;
             }
 
+            switch (Year % 12) // Tìm Chi như thuật toán đã trình bày
+            {
+                case 0: // Mỗi case này tương ứng một kết quả cần tra cứu trong bảng tra cứu Chi
+                    Chi = "Than"; // Giá trị tương ứng với mỗi case
+                    break;
+                case 1:
+                    Chi = "Dau";
+                    break;
+                case 2:
+                    Chi = "Tuat";
+                    break;
+                case 3:
+                    Chi = "Hoi";
+                    break;
+                case 4:
+                    Chi = "Ty";
+                    break;
+                case 5:
+                    Chi = "Suu";
+                    break;
+                case 6:
+                    Chi = "Dan";
+                    break;
+                case 7:
+                    Chi = "Meo";
+                    break;
+                case 8:
+                    Chi = "Thin";
+                    break;
+                case 9:
+                    Chi = "Ti";
+                    break;
+                case 10:
+                    Chi = "Ngo";
+                    break;
+                case 11:
+                    Chi = "Mui";
+                    break;
+            }
 
+            Console.WriteLine("Nam {0} co nam am lich la: {1} {2}", Year, Can, Chi); // Nối Can và Chi lại để được năm âm lịch
 
+            Console.ReadLine();
+            Console.ReadKey();*/
 
+            #endregion
 
+            #region Bài 11 Kiểu dữ liệu Object
+            // boxing: chuyển từ kiểu dữ liệu giá trị sang kiểu dữ liệu tham chiếu
+            // Khởi tạo biến Value kiểu int (kiểu dữ liệu giá trị)
+            /*int Value = 109;
 
+            *//* thực hiện boxing bằng cách:
+             * Khởi tạo đối tượng ObjectValue kiểu object 
+             * Gán giá trị của biến Value vào ObjectValue *//*
+            object ObjectValue = Value;
 
+            int newValue = (int)ObjectValue;*/
 
+            // Từ khóa Var
+            /* Vì biến StringVariable được khởi tạo giá trị kiểu chuỗi 
+             * nên trình biên dịch sẽ hiểu biến này như là biến kiểu string.
+             */
+            /*var varString = "HowKteam";
+            // Khai báo tường minh biến kiểu string
+            string Content = "HowKteam";
 
+            // In giá trị của biến StringVariable và biến Content
+            Console.WriteLine(varString);
+            Console.WriteLine(Content);*/
+
+            #endregion
+
+            #region Bài 12 Kiểu dữ liệu Dynamic
+            // Đặc điểm của Dynamic
+            /*// Khai báo biến StringValue kiểu dynamic và khởi tạo giá trị là một chuỗi kiểu string
+            dynamic StringValue = "HowKteam";
+            *//* 
+            * Chúng ta biết rằng kiểu chuỗi không hỗ trợ toán tử ++
+            * Nhưng câu lệnh StringValue++ vẫn không báo lỗi là do ở thời điểm hiện tại trình biên dịch vẫn chưa xác định kiểu dữ liệu cho biến StringValue
+            * Khi chạy chương trình thì lúc này C# mới phát hiện biến StringValue là kiểu string và không thể thực hiện toán tử ++ lúc đó sẽ xuất hiện lỗi
+            *//*
+            StringValue++;*/
+
+            // Ví dụ
+            /*// Khai báo 2 biến Name và Mission kiểu string và khởi tạo giá trị.
+            string Name = "HowKteam ";
+            string Mission = "Free Education";
+
+            *//* 
+             * Thực hiện gán 1 biến kiểu string cho biến kiểu dynamic bằng cách ép kiểu ngầm định (implicit)
+             * Sau phép gán này thì biến DynamicValue chứa giá trị là "Free Education" nhưng kiểu dữ liệu của nó vẫn chưa được xác định.
+            *//*
+            dynamic DynamicName = Name;
+
+            // Thực hiện cộng chuỗi và in ra màn hình bình thường
+            Console.WriteLine("Mission of " + DynamicName + " is " + Mission);*/
+
+            #endregion
+
+            #region Bài 13 Giới thiệu cấu trúc vòng lặp
+            // vòng lặp kết thúc khi đủ 10 lần
+            /*Lặp 10 lần
+{
+                Console.WriteLine("HowKteam.com");
+            }
+
+            int i = 0;
+            // vòng lặp kết thúc khi điều kiện dừng thỏa là i > 10 hay I == 11
+            Lặp đến khi i > 10
+{
+                Console.WriteLine("HowKteam.com");
+                i++; // i tăng thêm một đơn vị [0, 1, 2, 3, .., 10, 11]
+            }
+
+            int i = 0;
+            // vòng lặp không kết thúc vì i mãi == 0
+            Lặp đến khi i > 10
+{
+                Console.WriteLine("HowKteam.com");
+            }*/
 
             #endregion
         }
