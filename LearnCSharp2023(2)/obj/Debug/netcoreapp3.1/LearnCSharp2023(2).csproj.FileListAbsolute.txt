@@ -1,0 +1,14 @@
+D:\LearnCsharp\LearnCSharp2023(2)\bin\Debug\netcoreapp3.1\LearnCSharp2023(2).exe
+D:\LearnCsharp\LearnCSharp2023(2)\bin\Debug\netcoreapp3.1\LearnCSharp2023(2).deps.json
+D:\LearnCsharp\LearnCSharp2023(2)\bin\Debug\netcoreapp3.1\LearnCSharp2023(2).runtimeconfig.json
+D:\LearnCsharp\LearnCSharp2023(2)\bin\Debug\netcoreapp3.1\LearnCSharp2023(2).runtimeconfig.dev.json
+D:\LearnCsharp\LearnCSharp2023(2)\bin\Debug\netcoreapp3.1\LearnCSharp2023(2).dll
+D:\LearnCsharp\LearnCSharp2023(2)\bin\Debug\netcoreapp3.1\LearnCSharp2023(2).pdb
+D:\LearnCsharp\LearnCSharp2023(2)\obj\Debug\netcoreapp3.1\LearnCSharp2023(2).csproj.AssemblyReference.cache
+D:\LearnCsharp\LearnCSharp2023(2)\obj\Debug\netcoreapp3.1\LearnCSharp2023(2).GeneratedMSBuildEditorConfig.editorconfig
+D:\LearnCsharp\LearnCSharp2023(2)\obj\Debug\netcoreapp3.1\LearnCSharp2023(2).AssemblyInfoInputs.cache
+D:\LearnCsharp\LearnCSharp2023(2)\obj\Debug\netcoreapp3.1\LearnCSharp2023(2).AssemblyInfo.cs
+D:\LearnCsharp\LearnCSharp2023(2)\obj\Debug\netcoreapp3.1\LearnCSharp2023(2).csproj.CoreCompileInputs.cache
+D:\LearnCsharp\LearnCSharp2023(2)\obj\Debug\netcoreapp3.1\LearnCSharp2023(2).dll
+D:\LearnCsharp\LearnCSharp2023(2)\obj\Debug\netcoreapp3.1\LearnCSharp2023(2).pdb
+D:\LearnCsharp\LearnCSharp2023(2)\obj\Debug\netcoreapp3.1\LearnCSharp2023(2).genruntimeconfig.cache
